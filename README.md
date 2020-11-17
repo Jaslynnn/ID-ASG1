@@ -1,10 +1,20 @@
 # Your Project's Name
+Project Idea 2 
+The goal of this project is to create a resume that will showcase all of my best works to a potential employer to get hired.
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
 Essentially, this part is your sales pitch.
  
 ## Design Process
+
+This website is for myself and for employers who are looking to recruit UI/UX designers as I want to work as a ui,ux designer in the future.This project would be the best way to land myself a job as I would be able to impress employer with my portfolio.
+
+As a student, I want to create an website that is has a trending and modernised style, so that I will be able to impress my employers as they would know that they would be be able to get a impressive website.
+As a student, I also would like to showcase my works while keeping it simplistic yest easy to access. For example, the small images of my projects will be enlarged as you hover your mouse over them.
+
+
+
  
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 

@@ -1,0 +1,597 @@
+/*https://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season HEX Codes from top to bottom: #D9D9D9, #F5B3B4, #D15656, #94353C, #47322D, #996B42*/
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  margin-right: 20px;
+  padding-right: 50px ;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track-piece{
+  background-color: none;
+  opacity:0.2;
+
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D15656;
+  border-radius: 10px;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #94353C;
+}
+
+::-webkit-resizer{
+  background-color: #47322D;
+}
+
+body{
+  background-color:  #D9D9D9;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: 'Baloo Chettan 2', cursive;
+}
+h1{
+  margin-top:-50px;
+  margin-bottom: -20px;
+  font-size: 60px;
+}
+h2{
+    font-size: 31px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding: -100px;
+
+  }
+  h3{ 
+      padding-right: 40px;
+      padding-left:40px;
+  }
+p{
+    margin-top: -6px;
+    margin-bottom: 5px;
+    padding: 7px;
+
+ }
+
+ h4{
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  letter-spacing: 10px;
+}
+
+
+ .container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.search{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width: 100px;
+  height: 150px;
+  border: 1px;
+  border-radius: 10px;
+  font-family: 'Baloo Chettan 2', cursive;
+  text-align: right;
+  float: left;
+}
+
+.resume{
+  display: flex;
+  color: #47322D;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.projects{
+  color: #47322D;
+  display: flex;
+  flex-direction:row;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  width: stretch;
+  padding-left: 60px;
+
+}
+
+
+.download{
+  background-color: #D15656;
+  border: none;
+  margin-right: 5px;
+  color: white;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin:10px ;
+  padding: 10px,15px;
+  margin-bottom:25px;
+  margin-left: 20px;
+
+  font-family: 'Baloo Chettan 2', cursive;
+
+
+  transition-duration: 0.35s;
+}
+.download:hover{ 
+    background-color:white ;
+    color: #F5B3B4;
+}
+
+.navi{
+
+   opacity: 0.9;
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    font-family: 'Baloo Chettan 2', cursive;
+    width: 90px;
+    margin: 5px;
+    margin-left: 4;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    color:#D15656;
+    display: inline-block;
+    border: 1.5px solid;
+
+    transition-duration: 0.35s;
+
+}
+
+.navi:hover{ 
+    background-color:#F5B3B4 ;
+    color: white;
+    text-decoration: none;
+}
+.overlay{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  height: 300px;
+  align-content: space-around;
+  position: relative;
+  text-align: center;
+  
+
+}
+
+.category{
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  margin-top: 5px
+
+}
+.cardpg1{
+  font-size: 18px;
+  color: #47322D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  width: 270px;
+  height: 400px;
+  top: 0;
+  left:500;
+  float: left;
+  text-align: center;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  border-radius: 20px;
+  background-color:white;
+  scroll-margin: 500px;
+  transition: width 0.5s, height 0.5s;
+  transition-timing-function: ease-in-out 1s;
+
+}
+.cardpg1:hover{
+  font-size:18.5px;
+  width: 280px;
+  height: 410px;
+}
+
+.card2pg1{
+  margin-top: 100px;
+  color: #47322D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 500px;
+  height: 270px;
+  top: 0;
+  left:500;
+  float: left;
+  text-align: left;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  border-radius: 20px;
+  background-color:white;
+  scroll-margin: 500px;
+  font-size: 20px;
+  transition: width 0.5s, height 0.5s;
+  transition-timing-function: ease-in-out 1s;
+  
+
+
+}
+
+
+.card2pg1:hover{
+  font-size:21px;
+  width: 520px;
+  height: 280px;
+}
+
+.cardpg2{
+  color: #47322D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 550px;
+  height: 290px;
+  top: 0;
+  left:500;
+  float: left;
+  text-align: left;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  border-radius: 20px;
+  background-color:white;
+  scroll-margin: 500px;
+  font-size: 17px;
+  transition: width 0.5s ;
+  transition-timing-function: ease-in-out 1s;
+  transition-property: font-size 1s;
+  
+  
+
+
+}
+.cardpg2:hover{
+  font-size:18.5px;
+  width: 585px;
+  height: 300px;
+}
+
+.aboutpg1{
+  color: #47322D;
+  background-color:  #F5B3B4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  height: 350px;
+  align-content: center;
+  padding: 10;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-right: 20px;
+  text-align: center;
+  width:290px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  transition: width 0.5s;
+  transition-timing-function: ease-in-out 1s;
+  
+}
+
+
+.aboutpg1:hover{
+  width: 310px;
+}
+
+.about2pg1{
+margin-top: 100px;
+font-size: 18px;
+writing-mode: vertical-rl;
+letter-spacing: 3px;
+color: #47322D;
+background-color:  #F5B3B4;
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+justify-content: center;
+align-items:center;
+width:50px;
+height: 270px;
+align-content: center;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+text-align: center;
+box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+
+.aboutpg2{
+  color: #47322D;
+background-color:  #F5B3B4;
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+justify-content: center;
+align-items:center;
+width:50px;
+height: 270px;
+align-content: center;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+text-align: center;
+box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+
+
+}
+.above{
+  z-index: 10;
+  margin:30px;
+}
+
+.me{
+  margin-top: -10px;
+  padding: 0px;
+  width: 170px;
+  border-radius: 120px;
+  color: #D9D9D9;
+  border: 5px solid;
+  transition: width 0.5s;
+  transition-timing-function: ease-in-out 1s;
+  
+
+}
+.me:hover{
+  width: 180px;
+}
+
+.button1{
+  background-color: #D15656;
+  border: none;
+  margin-right: 5px;
+  color: white;
+  padding: 10px,2px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border: 1.5px solid;
+
+  transition-duration: 0.35s;
+}
+.button1:hover{ 
+    background-color:white ;
+    color: #F5B3B4;
+}
+
+.button2{
+  background-color: white;
+  border: none;
+  color: #D15656;
+  margin-left: 5px;
+  padding: 10px,2px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border: 1.5px solid;
+
+  transition-duration: 0.35s;
+}
+
+.button2:hover{ 
+    background-color:#F5B3B4 ;
+    color: white;
+}
+
+.button3{
+    background-color:#D15656;
+    border: none;
+    color: white;
+    padding: 10px,2px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Baloo Chettan 2', cursive;
+
+    transition-duration: 0.35s;
+
+  }
+
+  .button3:hover{ 
+    background-color:white ;
+    color: #F5B3B4;
+}
+
+/*footer*/
+
+.contactbox{
+  background-color: #94353C;
+  opacity:0.95;
+  margin:-10px;
+  display:none;
+  text-align: center;
+  width: stretch;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:flex-st;
+  height: 400px;
+  align-content: center;
+  position: relative;
+  color: white;
+}
+
+.name{
+  width:200px;
+  background-color:#94353C;
+  border: none;
+  color: white;
+  padding: 4px,1px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border: 1.5px solid;
+  transition: width 1s;
+}
+.name:hover{
+  width:250px;
+}
+
+.email{
+  width:400px;
+  background-color:#94353C;
+  border: none;
+  color: white;
+  padding: 4px,1px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border: 1.5px solid;
+  transition: width 1s;
+}
+.email:hover{
+  width:450px;
+}
+
+.question{
+  width: 600px;
+  height: 100px;
+  background-color:#94353C;
+  border: none;
+  margin: 5px;
+  color: white;
+  padding: 4px,1px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border: 1.5px solid;
+  transition: width 1s;
+}
+.question:hover{
+  width:650px;
+}
+
+.robot{
+  width:200px;
+  border: none;
+  color: white;
+  padding-left: 9px;
+  border-radius: 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+  transition-property: font-size 3s;
+  
+}
+.robot:hover{
+  font-size:17px;
+}
+
+::placeholder{
+  color: white;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .search{
+    margin-left:-5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navi{
+    width:80px;
+  }
+  
+  .cardpg1{
+    padding-top:40px ;
+    margin-top: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutpg1{
+    visibility: collapse;
+  }
+  .card2pg1{
+    height: auto;
+  }
+
+  .about2pg1{
+    
+  display:none;}
+
+  .resume{
+    text-align: center;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .cardpg2{
+    margin-top: 100px;
+ 
+    height: auto;
+  }
+  .aboutpg2{
+    display:none;
+  }
+}
