@@ -217,10 +217,7 @@ html {
 
   }
   
-  .card,.abosut{
-      text-align: center;
-    
-  }
+
   .above{
     z-index: 10;
     margin:30px;
