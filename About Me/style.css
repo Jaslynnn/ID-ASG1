@@ -85,11 +85,13 @@ p{
 }
 
 .search{
+  position: fixed;
+  top: 3px;
   display: flex;
   flex-direction:row;
   flex-wrap:wrap;
-  width: 80px;
-  height: 150px;
+  width: 100px;
+  height: 900px;
   border: 1px;
   border-radius: 10px;
   font-family: 'Baloo Chettan 2', cursive;
@@ -150,7 +152,7 @@ p{
 
 .navi{
 
-   opacity: 0.9;
+    opacity: 0.9;
     display: flex;
     align-items: flex-start;
     font-size: 16px;
@@ -176,18 +178,50 @@ p{
 }
 .overlay{
   margin-top: 80px;
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: center;
   align-items:center;
-  height: 500px;
+  height: 400px;
   align-content: space-around;
   position: relative;
   text-align: center;
   
 
 }
+.overlay1{
+  margin-top: 80px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  height: 400px;
+  align-content: space-around;
+  position: relative;
+  text-align: center;
+  
+
+}
+
+.overlay2{
+  margin-top: 80px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  height: 400px;
+  align-content: space-around;
+  position: relative;
+  text-align: center;
+}
+
 .container{
   margin: 20px;
   justify-content: center;
@@ -207,6 +241,7 @@ p{
 
 }
 .cardpg1{
+  margin: 1px;
   font-size: 18px;
   color: #47322D;
   display: flex;
@@ -357,7 +392,7 @@ p{
 margin-top: 100px;
 font-size: 18px;
 writing-mode: vertical-rl;
-letter-spacing: 3px;
+letter-spacing: 4px;
 color: #47322D;
 background-color:  #F5B3B4;
 display: flex;
@@ -377,6 +412,8 @@ box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 .aboutpg2{
   color: #47322D;
 background-color:  #F5B3B4;
+writing-mode: vertical-rl;
+letter-spacing: 4px;
 display: flex;
 flex-direction: row;
 flex-wrap:wrap;
@@ -428,7 +465,6 @@ box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 
 .below{
   z-index: -20px;
-  
 }
 
 .me{
@@ -722,6 +758,30 @@ footer{
   font-size:17px;
 }
 
+.submit{
+  width:200px;
+  background-color: #D15656;
+  border: none;
+  color: white;
+  padding: 4px,1px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+
+  transition: width 1s;
+}
+.submit:hover{
+  width:220px;
+  background-color: #47322D;
+  border: 1.5px solid;
+}
+
+
 ::placeholder{
   color: white;
   opacity: 1;
@@ -733,9 +793,9 @@ footer{
     width: 100%;
   }
   h1{
-    margin-top:-50px;
+    margin-top:0px;
     margin-bottom: -20px;
-    font-size: 10vw;
+    font-size: 9.5vw;
   }
   h2{
   
@@ -743,7 +803,7 @@ footer{
       margin-top: -20px;
       margin-bottom: 0px;
       padding: -100px;
-      font-size: 7vw;
+      font-size: 6.5vw;
   
     }
     h3{ 
@@ -772,58 +832,86 @@ footer{
     overflow-x: hidden;
   }
   .search{
-    margin-left:0px;
+    position: fixed;
+    padding-top: 3%;
+    padding-bottom: -200px;
     width: auto;
-    height: auto;
+    height: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 10px;
 
   }
   .projects{
     margin-left: -10px;
-
     justify-content: center;
     align-items: center;
+  }
+  .resume{
+    padding-top: -20%;
+    margin-bottom:-280px ;
   }
 
   .navi{
     width:80px;
   }
+
   .overlay{
-    margin-bottom:50px;
+    margin-top: 35%;
+    height: 89%;
+  }
+
+  .overlay1{
+    padding-top: -50%;
+    margin-bottom: -120%;
+    height: 89%;
+  }
+
+  .overlay2{
+    margin-bottom:auto;
+    margin-top:20%;
+    height: 89%;
   }
   .cardpg1{
-  
-    margin-top: 550px;
     justify-content: center;
     align-items: center;
   }
   .aboutpg1{
-    visibility: hidden;
-  }
-  .cardpg2{
-  
-    width: 90%;
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 4vw;
+    border-radius: 22px;
     height: auto;
   }
+
   .card2pg1{
+    width: 100%;
+    height: auto;
+  }
+
+  .cardpg2{
     width: 90%;
     height: auto;
   }
+
   .cardpg3{
-
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex: 1 46%;
+    width: 80%;
     font-size:4vw;
-
+    border-radius: 20px;
     height: auto;
   }
+
   .aboutpg3{
     height: auto;
+    border-radius: 20px;
   }
 
   .about2pg1{
-    
   display:none;}
 
   .resume{
@@ -834,35 +922,47 @@ footer{
     align-items: auto;
   }
 
-
+.category{
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
   .aboutpg2{
     display:none;
   }
+  .cardpg3{
+    position: sticky;
+    margin-bottom:0% ;
+  }
+  .aboutpg3{
+    margin-top:0% ;
+    margin-bottom:10% ;
+
+  }
   .works{
     padding-left: 0px;
-    width: 45%;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex: 1 46%;
     flex-grow: inherit;
   }
   
   .work2{
     padding-left: 6px;
-    width: 45%;
     transition: width 0.5s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
+    flex: 2 46%;
     flex-grow: inherit;
   }
   .work2:hover{
     margin-top: -30px;
     padding-left: 6px;
-    width: 180px;
+    width: 70%;
   }
   .work3{
     padding-left: 6px;
-    width: 45%;
+    width: 90%;
     transition: width 0.5s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
@@ -871,43 +971,41 @@ footer{
   }
   
   .work3:hover{
-  
     margin-top: -30px;
     padding-left: 6px;
-    width: 350px;
+    width: 100%;
   }
+
   .work4{
-    width: 45%;
+    width: 90%;
     transition: width 1s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
     flex: 1 46%;
     flex-grow: inherit;
   }
+
   .work4:hover{
-  
-    margin-top: -70px;
-    margin-left: -35px;
-    width: 540px;
+    width: 100%;
   }
   
   .work5{
-    width: 45%;
+    width: 50%;
     transition: width 1s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
     flex: 1 46%;
     flex-grow: inherit;
   }
+
   .work5:hover{
-  
     margin-top: -80px;
-    width: 300px;
+    width: 100%;
   }
   
   .work6{
     padding-left: 6px;
-    width: 45%;
+    width: 90%;
     transition: width 0.5s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
@@ -919,30 +1017,26 @@ footer{
     margin-left: -6px;
     margin-top: -80px;
     padding-left: 6px;
-    width: 350px;
+    width: 100%;
   }
   
   .work7{
     margin-left: -6px;
-  
-    width: 45%;
+    width: 100%;
     transition: width 0.5s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
+    flex: 1 100%;
     flex-grow: inherit;
   }
   
   .work7:hover{
-    margin-top: -10px;
-    margin-left: -85px;
-    padding-left: 6px;
-    width: 600px;
+    width: 150%;
   }
   
   .work8{
     margin-left: -6px;
-    width: 45%;
+    width: 100%;
     transition: width 0.5s ;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
@@ -954,18 +1048,39 @@ footer{
     margin-top: -50px;
     margin-left: -90px;
     padding-left: 6px;
-    width: 600px;
+    width: 150%;
   }
+
   .name{
-    width:90px;
+    width:25%;
 
   }
+  .name:hover{
+    width:30%;
+  }
+
   .email{
-    width:250px;
+    width:50%;
+  }
+
+  .email:hover{
+    width:260px;
   }
 
   .question{
-    width:340px;
+    width:77%;
+  }
+
+  .question:hover{
+    width:360px;
+  }
+
+  .submit{
+    width:25%;
+  }
+
+  .submit:hover{
+    width:30%;
 
   }
 }
