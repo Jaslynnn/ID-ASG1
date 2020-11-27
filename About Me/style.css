@@ -476,6 +476,7 @@ h4 {
 
 
 }
+
 /*Headers before the body information*/
 /*Navigation Bar*/
 .navbar {
@@ -581,6 +582,7 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
 /*End of Headers before the body information*/
 
 /*Invisible container to hold main container in the middle page 1 */
@@ -1013,6 +1015,7 @@ h4 {
   padding-left: 6px;
   width: 600px;
 }
+
 /*End of project images*/
 
 /*button styles*/
@@ -1216,7 +1219,8 @@ footer {
 
 ::placeholder {
   color: white;
-  opacity: 1;/*used to ensure consistency in diffferent browsers*/
+  opacity: 1;
+  /*used to ensure consistency in diffferent browsers*/
 }
 
 @media only screen and (max-width: 670px) {
@@ -1384,6 +1388,7 @@ footer {
     margin-bottom: 10%;
 
   }
+
   /* works*/
   .works {
     padding-left: 0px;
