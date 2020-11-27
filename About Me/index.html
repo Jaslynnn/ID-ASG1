@@ -1,97 +1,108 @@
-<html>
-
+<!DOCTYPE html>
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
-<link href="normalize.css" rel="stylesheet">
-<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="screen.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+  <!--googlefont of my choice is linked-->
 
 </head>
 
 <header>
-
-  <div class=search>
+  <!--Navigation bar-->
+  <div class=navbar>
     <form>
-      <input type= submit class= navi formaction= index.html value="About me">
-      <input type= submit class= navi formaction= resume.html value="Resume">
-      <input type= submit class= navi formaction= projects.html value="Projects">
-      <a href= "#contactme" > <input type= button class= navi value="Contact">
-    </a> 
+      <input type=submit class=navi formaction=index.html value="About me">
+      <input type=submit class=navi formaction=resume.html value="Resume">
+      <input type=submit class=navi formaction=projects.html value="Projects">
+      <a href="#contactme"> <input type=button class=navi value="Contact">
+        <!--An anchor is placed for easy access-->
+      </a>
     </form>
-   
+
   </div>
 </header>
 <br></br>
 
 <body>
-  <div class = overlay>
-    <div class= cardpg1 above>
-      <div><img class="me" src="Images/face.jpg" alt="logo">
+  <!--Container to allow the 'floating' of the card-->
+  <div class=overlay>
+    <div class=cardpg1 above>
+      <!--above is used with a z-index to make the card overlap the overlay-->
+      <div><img class="me" src="Images/face.jpg" alt="My face">
+        <!--My profile picture-->
       </div>
       <h2>Jaslyn Chen</h2>
       <p> Year 1 Immersive Media Student from Ngee Ann Polytechnic</p>
       <form>
-      <input type= submit class= button1 formaction=resume.html value="Resume">
-      <input type= submit class= button2 formaction=projects.html value="Projects">
+        <!--Buttons for navigation-->
+        <input type=submit class=button1 formaction=resume.html value="Resume">
+        <input type=submit class=button2 formaction=projects.html value="Projects">
       </form>
     </div>
-     <div class =aboutpg1 above>
-       <h1>Hello</h1>
-       <br></br>
+    <div class=aboutpg1 above>
+      <!--above is used with a z-index to make the card overlap the overlay-->
+      <h1>Hello</h1>
+      <br></br>
 
-       <h3>Click on this button below to find out about me.</h3>
-       <a href="#aboutme" ><input type= button class= button3 value="About Me">
-       </a>
-      </div>
+      <h3>Click on this button below to find out about me.</h3>
+      <!--container to direct users so they do not feel bored-->
+      <a href="#aboutme"><input type=button class=button3 value="About Me">
+        <!--An anchor is placed for easy access-->
+      </a>
     </div>
   </div>
-  <br ></br>
-  <div id="aboutme" class = overlay>
-    <div class= card2pg1 above>
+  </div>
+  <br></br>
+  <div id="aboutme" class=overlay>
+    <div class=card2pg1 above>
+      <!--About me information-->
       <h2>About me</h2>
       <p>
         Hi. My name is Jaslyn and I enjoy creating things.
-        My hobbies include drawing, creating art, badminton and working out. I also enjoy playing mobile gaming in my free time.
-         I am currently aspiring to be a UI/UX designer.
-         Please feel free to browse through my website to look at my projects
-         and contact me if any of them manages to catch your eye. Thank you.
-         
+        My hobbies include drawing, creating art, badminton and working out. I also enjoy playing mobile gaming in my
+        free time.
+        I am currently aspiring to be a UI/UX designer.
+        Please feel free to browse through my website to look at my projects
+        and contact me if any of them manages to catch your eye. Thank you.
+
       </p>
     </div>
-     <div class =about2pg1 above>
+    <div class=about2pg1 above>
 
       <h3>This is me.</h3>
-    
-     </div>
+
     </div>
+  </div>
   </div>
   <br></br>
 
-</div>
+  </div>
 </body>
 
-<footer >
+<footer>
   <div class=contactbox above>
+    <!--Contact box with personal details-->
     <br>
-    <h2 id= "contactme">Contact me:</h2>
+    <h2 id="contactme">Contact me:</h2>
+    <!--An anchor is placed here for easy access-->
     <br></br>
     <form>
       <br>
-      <input type= "text" class= name placeholder="Name">
-      <input type= "text" class= email placeholder="Email">
+      <input type="text" class=name placeholder="Name">
+      <input type="text" class=email placeholder="Email">
       <br>
-      <input type= "text" class= question placeholder="Question">
+      <input type="text" class=question placeholder="Question">
       <br>
-      <input type= "radio">
-       <label class=robot >Are you a robot</label>
-       <input type= button class= submit onclick= "alert('Thank you for submiting this form. We will get back to you shortly:)')" value="Submit">
+      <input type="radio">
+      <label class=robot>Are you a robot</label>
+      <input type=button class=submit
+        onclick="alert('Thank you for submiting this form. We will get back to you shortly:)')" value="Submit">
+      <!--An alert appears on click so that users will feel that they have interacted with the website and they feel reassured after getting a response-->
     </form>
   </div>
 </footer>
 
 
 </html>
-

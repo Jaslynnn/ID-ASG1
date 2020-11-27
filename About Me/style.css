@@ -1,23 +1,413 @@
-/*https://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season HEX Codes from top to bottom: #D9D9D9, #F5B3B4, #D15656, #94353C, #47322D, #996B42*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*End of normalize.css*/
+
+
+
+
+
+
+
+
+
+/*Applied to make anchor scrolls smooth and simultanous */
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+
+/* Scroll bars */
+::-webkit-scrollbar {
   margin-right: 20px;
-  padding-right: 50px ;
+  padding-right: 50px;
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track { 
+::-webkit-scrollbar-track {
   border-radius: 50px;
 }
 
-::-webkit-scrollbar-track-piece{
-  background-color: none;
-  opacity:0.2;
-
-
+/* Track-piece */
+::-webkit-scrollbar-track-piece {
+  opacity: 0.2;
 }
 
 /* Handle */
@@ -32,64 +422,68 @@ html {
   background: #94353C;
 }
 
-::-webkit-resizer{
+::-webkit-resizer {
   background-color: #47322D;
 }
 
 /*code actually starts here*/
-body{
-  background-color:  #D9D9D9;
+body {
+  background-color: #D9D9D9;
   align-items: center;
   overflow-x: hidden;
+  /*overflow used to make the horizontal scroll bar dissapear*/
 }
 
-h1,h2,h3,h4,h5,p{
+/*googlefonts applied to all fonts*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   font-family: 'Baloo Chettan 2', cursive;
 }
-h1{
-  margin-top:-50px;
+
+h1 {
+  margin-top: -50px;
   margin-bottom: -20px;
   font-size: 60px;
 }
-h2{
-  
-    font-size: 31px;
-    margin-top: -20px;
-    margin-bottom: 0px;
-    padding: -100px;
 
-  }
-  h3{ 
-      padding-right: 40px;
-      padding-left:40px;
-  }
-p{
-    margin-top: -6px;
-    margin-bottom: 5px;
-    padding: 7px;
+h2 {
+  font-size: 31px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  padding: -100px;
 
- }
+}
 
- h4{
-  margin-top:-2px;
+h3 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+p {
+  margin-top: -6px;
+  margin-bottom: 5px;
+  padding: 7px;
+
+}
+
+h4 {
+  margin-top: -2px;
   font-size: 20px;
 
 
 }
-
-
- .container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.search{
+/*Headers before the body information*/
+/*Navigation Bar*/
+.navbar {
   position: fixed;
   top: 3px;
   display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100px;
   height: 900px;
   border: 1px;
@@ -99,22 +493,80 @@ p{
   float: left;
 }
 
-.resume{
+/*Individual styles for each navigation button*/
+.navi {
+  opacity: 0.9;
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  font-family: 'Baloo Chettan 2', cursive;
+  width: 90px;
+  margin: 5px;
+  margin-left: 4;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  color: #D15656;
+  display: inline-block;
+  border: 1.5px solid;
+
+  transition-duration: 0.35s;
+
+}
+
+.navi:hover {
+  background-color: #F5B3B4;
+  color: white;
+  text-decoration: none;
+}
+
+/*Huge Resume title on resume page*/
+.resume {
   display: flex;
   color: #47322D;
-  flex-direction:row;
-  flex-wrap:wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
 
 }
 
-.projects{
+/*style for the download cv button*/
+.download {
+  background-color: #D15656;
+  border: none;
+  margin-right: 5px;
+  color: white;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px, 15px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  font-family: 'Baloo Chettan 2', cursive;
+
+  transition-duration: 0.35s;
+}
+
+.download:hover {
+  background-color: white;
+  color: #F5B3B4;
+}
+
+
+
+/*Huge Projects title on projects page*/
+.projects {
   flex-direction: column;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  align-items:center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   margin-top: 5px;
   text-decoration: none;
@@ -123,252 +575,206 @@ p{
   margin-left: -20px;
 }
 
-.download{
-  background-color: #D15656;
-  border: none;
-  margin-right: 5px;
-  color: white;
-  border-radius: 12px;
+/*Used to contain anchors for School projects and personal projects on projects page*/
+.container {
+  margin: 20px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin:10px ;
-  padding: 10px,15px;
-  margin-bottom:25px;
-  margin-left: 20px;
-
-  font-family: 'Baloo Chettan 2', cursive;
-
-
-  transition-duration: 0.35s;
 }
-.download:hover{ 
-    background-color:white ;
-    color: #F5B3B4;
-}
+/*End of Headers before the body information*/
 
-.navi{
-
-    opacity: 0.9;
-    display: flex;
-    align-items: flex-start;
-    font-size: 16px;
-    font-family: 'Baloo Chettan 2', cursive;
-    width: 90px;
-    margin: 5px;
-    margin-left: 4;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-    color:#D15656;
-    display: inline-block;
-    border: 1.5px solid;
-
-    transition-duration: 0.35s;
-
-}
-
-.navi:hover{ 
-    background-color:#F5B3B4 ;
-    color: white;
-    text-decoration: none;
-}
-.overlay{
+/*Invisible container to hold main container in the middle page 1 */
+.overlay {
   margin-top: 80px;
   margin-left: 5px;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 400px;
   align-content: space-around;
   position: relative;
   text-align: center;
-  
-
 }
-.overlay1{
+
+/*Invisible container to hold main container in the middle page 2 */
+.overlay1 {
   margin-top: 80px;
   margin-bottom: 0px;
   margin-left: 5px;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 400px;
   align-content: space-around;
   position: relative;
   text-align: center;
-  
+
 
 }
 
-.overlay2{
+/*Invisible container to hold main container in the middle page 3 */
+.overlay2 {
   margin-top: 80px;
   margin-left: 5px;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 400px;
   align-content: space-around;
   position: relative;
   text-align: center;
 }
 
-.container{
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.category{
+/*To hold sub headers for each category*/
+.category {
   flex-direction: column;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  align-items:center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   margin-top: 5px;
   text-decoration: none;
   display: block;
   color: #47322D;
 
-
 }
-.cardpg1{
+
+/*Holds main information*/
+.cardpg1 {
   margin: 1px;
   font-size: 18px;
   color: #47322D;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: 270px;
   height: 400px;
   top: 0;
-  left:500;
+  left: 500;
   float: left;
   text-align: center;
   padding: 2em;
   border-radius: 5px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  background-color:white;
+  background-color: white;
   scroll-margin: 500px;
   transition: width 0.5s, height 0.5s;
   transition-timing-function: ease-in-out 1s;
 
 }
-.cardpg1:hover{
-  font-size:18.5px;
+
+.cardpg1:hover {
+  font-size: 18.5px;
   width: 280px;
   height: 410px;
 }
 
-.card2pg1{
+/*Holds main about me information*/
+.card2pg1 {
   margin-top: 100px;
   color: #47322D;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 500px;
   height: 270px;
   top: 0;
-  left:500;
+  left: 500;
   float: left;
   text-align: left;
   padding: 2em;
   border-radius: 5px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  background-color:white;
+  background-color: white;
   scroll-margin: 500px;
   font-size: 20px;
   transition: width 0.5s, height 0.5s;
   transition-timing-function: ease-in-out 1s;
-  
-
-
 }
 
 
-.card2pg1:hover{
-  font-size:21px;
+.card2pg1:hover {
+  font-size: 21px;
   width: 520px;
   height: 280px;
 }
 
-.cardpg2{
+/*Holds main information of my resume*/
+.cardpg2 {
   color: #47322D;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 550px;
   height: 290px;
   top: 0;
-  left:500;
+  left: 500;
   float: left;
   text-align: left;
   padding: 2em;
   border-radius: 5px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  background-color:white;
+  background-color: white;
   scroll-margin: 500px;
   font-size: 17px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
   transition-property: font-size 1s;
-  
-  
-
-
 }
-.cardpg2:hover{
-  font-size:18.5px;
+
+
+.cardpg2:hover {
+  font-size: 18.5px;
   width: 585px;
   height: 300px;
 }
 
-  
-.cardpg3{
+/*Holds main artwork */
+.cardpg3 {
   color: #47322D;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 490px;
   height: 320px;
   top: 0;
-  left:500;
+  left: 500;
   float: left;
   text-align: left;
   padding: 1em;
   border-radius: 5px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color:white;
+  background-color: white;
 
   font-size: 17px;
- 
-  
+
+
 
 
 }
-.aboutpg1{
+
+/*Holds hook that is suposed to divert users to the about me segment*/
+.aboutpg1 {
   color: #47322D;
-  background-color:  #F5B3B4;
+  background-color: #F5B3B4;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 350px;
   align-content: center;
   padding: 10;
@@ -376,98 +782,104 @@ p{
   border-bottom-right-radius: 30px;
   padding-right: 20px;
   text-align: center;
-  width:290px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  width: 290px;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
   transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
-  
+
 }
 
 
-.aboutpg1:hover{
+.aboutpg1:hover {
   width: 310px;
 }
 
-.about2pg1{
-margin-top: 100px;
-font-size: 18px;
-writing-mode: vertical-rl;
-letter-spacing: 4px;
-color: #47322D;
-background-color:  #F5B3B4;
-display: flex;
-flex-direction: row;
-flex-wrap:wrap;
-justify-content: center;
-align-items:center;
-width:50px;
-height: 270px;
-align-content: center;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
-text-align: center;
-box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-}
-
-.aboutpg2{
+/*category for about me*/
+.about2pg1 {
+  margin-top: 100px;
+  font-size: 18px;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
   color: #47322D;
-background-color:  #F5B3B4;
-writing-mode: vertical-rl;
-letter-spacing: 4px;
-display: flex;
-flex-direction: row;
-flex-wrap:wrap;
-justify-content: center;
-align-items:center;
-width:50px;
-height: 270px;
-align-content: center;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
-text-align: center;
-box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-}
-
-.aboutpg3{   
-  font-size:17px;
-  color: #47322D;
-  background-color:  #F5B3B4;
+  background-color: #F5B3B4;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  justify-content:left;
-  align-items:flex-start;
-  width:400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 270px;
+  align-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/*category for each resume section*/
+.aboutpg2 {
+  color: #47322D;
+  background-color: #F5B3B4;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 270px;
+  align-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/*information for each project*/
+.aboutpg3 {
+  font-size: 17px;
+  color: #47322D;
+  background-color: #F5B3B4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  width: 400px;
   height: 250px;
   padding: 20px;
   align-content: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   text-align: left;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-  transition: width 0.5s ;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
-  transition-property: font-size 1s;
 
+  transition-property: font-size 1s;
 
 }
 
-.aboutpg3:hover{
-  font-size:19px;
+.aboutpg3:hover {
+  font-size: 19px;
   width: 440px;
 
 }
 
-.above{
+/*make the cards overlap the overlays*/
+.above {
   z-index: 10px;
-  margin:30px;
+  margin: 30px;
 }
 
-.below{
+/*make certain categories go below overlays*/
+.below {
   z-index: -20px;
 }
 
-.me{
+/*my face image*/
+.me {
   margin-top: -10px;
   padding: 0px;
   width: 170px;
@@ -476,128 +888,141 @@ box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
   border: 5px solid;
   transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
-  
 
 }
-.me:hover{
+
+.me:hover {
   width: 180px;
 }
 
-.works{
+
+/*project images*/
+.works {
   flex-direction: row;
   padding-left: 30px;
   width: 185px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 }
-.works:hover{
+
+.works:hover {
   padding-left: 30px;
   width: 240px;
 }
 
-.work2{
+
+.work2 {
   flex-direction: row;
   padding-left: 6px;
   width: 120px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 
 }
-.work2:hover{
+
+.work2:hover {
   margin-top: -30px;
   padding-left: 6px;
   width: 180px;
 }
-.work3{
+
+.work3 {
   flex-direction: row;
   padding-left: 6px;
   width: 200px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 }
 
-.work3:hover{
+.work3:hover {
 
   margin-top: -30px;
   padding-left: 6px;
   width: 350px;
 }
-.work4{
+
+.work4 {
   flex-direction: row;
   width: 400px;
-  transition: width 1s ;
+  transition: width 1s;
   transition-timing-function: ease-in-out 1s;
 }
-.work4:hover{
+
+.work4:hover {
 
   margin-top: -70px;
   margin-left: -35px;
   width: 540px;
 }
 
-.work5{
+.work5 {
   flex-direction: row;
   width: 250px;
-  transition: width 1s ;
+  transition: width 1s;
   transition-timing-function: ease-in-out 1s;
 }
-.work5:hover{
+
+.work5:hover {
 
   margin-top: -80px;
   width: 300px;
 }
 
-.work6{
+.work6 {
   flex-direction: row;
   padding-left: 6px;
   width: 210px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 }
 
-.work6:hover{
+.work6:hover {
   margin-left: -6px;
   margin-top: -80px;
   padding-left: 6px;
   width: 350px;
 }
 
-.work7{
+.work7 {
   flex-direction: row;
   margin-left: -6px;
 
   width: 500px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 }
 
-.work7:hover{
+.work7:hover {
   margin-top: -10px;
   margin-left: -85px;
   padding-left: 6px;
   width: 600px;
 }
 
-.work8{
+.work8 {
   flex-direction: row;
   margin-left: -6px;
   width: 390px;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   transition-timing-function: ease-in-out 1s;
 }
 
-.work8:hover{
+.work8:hover {
   margin-top: -50px;
   margin-left: -90px;
   padding-left: 6px;
   width: 600px;
 }
-.button1{
+/*End of project images*/
+
+/*button styles*/
+
+.button1 {
   background-color: #D15656;
   border: none;
   margin-right: 5px;
   color: white;
-  padding: 10px,2px;
+  padding: 10px, 2px;
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
@@ -608,17 +1033,18 @@ box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 
   transition-duration: 0.35s;
 }
-.button1:hover{ 
-    background-color:white ;
-    color: #F5B3B4;
+
+.button1:hover {
+  background-color: white;
+  color: #F5B3B4;
 }
 
-.button2{
+.button2 {
   background-color: white;
   border: none;
   color: #D15656;
   margin-left: 5px;
-  padding: 10px,2px;
+  padding: 10px, 2px;
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
@@ -630,62 +1056,63 @@ box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
   transition-duration: 0.35s;
 }
 
-.button2:hover{ 
-    background-color:#F5B3B4 ;
-    color: white;
+.button2:hover {
+  background-color: #F5B3B4;
+  color: white;
 }
 
-.button3{
-    background-color:#D15656;
-    border: none;
-    color: white;
-    padding: 10px,2px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Baloo Chettan 2', cursive;
+.button3 {
+  background-color: #D15656;
+  border: none;
+  color: white;
+  padding: 10px, 2px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Baloo Chettan 2', cursive;
 
-    transition-duration: 0.35s;
+  transition-duration: 0.35s;
 
-  }
+}
 
-  .button3:hover{ 
-    background-color:white ;
-    color: #F5B3B4;
+.button3:hover {
+  background-color: white;
+  color: #F5B3B4;
 }
 
 /*footer*/
-footer{
+footer {
   background-color: #94353C;
   margin-bottom: -50px;
 
 }
-.contactbox{
+
+.contactbox {
   background-color: #94353C;
-  margin:-20px;
-  display:none;
+  margin: -20px;
+  display: none;
   text-align: center;
   width: stretch;
   margin-top: 200px;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:flex-st;
+  align-items: flex-st;
   height: 400px;
   align-content: center;
   position: relative;
   color: white;
 }
 
-.name{
-  width:200px;
-  background-color:#94353C;
+.name {
+  width: 200px;
+  background-color: #94353C;
   border: none;
   color: white;
-  padding: 4px,1px;
+  padding: 4px, 1px;
   border-radius: 10px;
   margin: 5px;
   text-align: center;
@@ -696,16 +1123,17 @@ footer{
   border: 1.5px solid;
   transition: width 1s;
 }
-.name:hover{
-  width:250px;
+
+.name:hover {
+  width: 250px;
 }
 
-.email{
-  width:400px;
-  background-color:#94353C;
+.email {
+  width: 400px;
+  background-color: #94353C;
   border: none;
   color: white;
-  padding: 4px,1px;
+  padding: 4px, 1px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -715,18 +1143,19 @@ footer{
   border: 1.5px solid;
   transition: width 1s;
 }
-.email:hover{
-  width:450px;
+
+.email:hover {
+  width: 450px;
 }
 
-.question{
+.question {
   width: 600px;
   height: 100px;
-  background-color:#94353C;
+  background-color: #94353C;
   border: none;
   margin: 5px;
   color: white;
-  padding: 4px,1px;
+  padding: 4px, 1px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -736,12 +1165,13 @@ footer{
   border: 1.5px solid;
   transition: width 1s;
 }
-.question:hover{
-  width:650px;
+
+.question:hover {
+  width: 650px;
 }
 
-.robot{
-  width:200px;
+.robot {
+  width: 200px;
   border: none;
   color: white;
   padding-left: 9px;
@@ -752,18 +1182,19 @@ footer{
   font-size: 16px;
   font-family: 'Baloo Chettan 2', cursive;
   transition-property: font-size 3s;
-  
-}
-.robot:hover{
-  font-size:17px;
+
 }
 
-.submit{
-  width:200px;
+.robot:hover {
+  font-size: 17px;
+}
+
+.submit {
+  width: 200px;
   background-color: #D15656;
   border: none;
   color: white;
-  padding: 4px,1px;
+  padding: 4px, 1px;
   border-radius: 10px;
   margin: 5px;
   text-align: center;
@@ -775,109 +1206,120 @@ footer{
 
   transition: width 1s;
 }
-.submit:hover{
-  width:220px;
+
+.submit:hover {
+  width: 220px;
   background-color: #47322D;
   border: 1.5px solid;
 }
 
 
-::placeholder{
+::placeholder {
   color: white;
-  opacity: 1;
+  opacity: 1;/*used to ensure consistency in diffferent browsers*/
 }
 
 @media only screen and (max-width: 670px) {
-  /* For mobile phones: */
+
+  /* For mobile phones and tablets: */
   [class*="col-"] {
     width: 100%;
   }
-  h1{
-    margin-top:0px;
+
+  h1 {
+    margin-top: 0px;
     margin-bottom: -20px;
     font-size: 9.5vw;
   }
-  h2{
-  
-      font-size: 31px;
-      margin-top: -20px;
-      margin-bottom: 0px;
-      padding: -100px;
-      font-size: 6.5vw;
-  
-    }
-    h3{ 
-        padding-right: 40px;
-        padding-left:40px;
-        font-size: 6vw;
-    }
-  p{
-      margin-top: -6px;
-      margin-bottom: 5px;
-      padding: 7px;
-      font-size: 4vw;
-  
-   }
-  
-   h4{
-    margin-top:-2px;
-    font-size: 4vw;
-  
-  
+
+  h2 {
+
+    font-size: 31px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding: -100px;
+    font-size: 6.5vw;
+
   }
-  
-  body{
-    background-color:  #D9D9D9;
+
+  h3 {
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 6vw;
+  }
+
+  p {
+    margin-top: -6px;
+    margin-bottom: 5px;
+    padding: 7px;
+    font-size: 4vw;
+
+  }
+
+  h4 {
+    margin-top: -2px;
+    font-size: 4vw;
+
+
+  }
+
+  body {
+    background-color: #D9D9D9;
     align-items: center;
     overflow-x: hidden;
   }
-  .search{
+
+  .navbar {
     position: fixed;
     padding-top: 3%;
     padding-bottom: -200px;
     width: auto;
-    height: 30px;
+    height: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
     z-index: 10px;
 
   }
-  .projects{
+
+  .projects {
     margin-left: -10px;
     justify-content: center;
     align-items: center;
   }
-  .resume{
+
+  .resume {
     padding-top: -20%;
-    margin-bottom:-280px ;
+    margin-bottom: -250px;
   }
 
-  .navi{
-    width:80px;
+  .navi {
+    width: 80px;
   }
 
-  .overlay{
+  .overlay {
     margin-top: 35%;
     height: 89%;
   }
 
-  .overlay1{
+  .overlay1 {
     padding-top: -50%;
     margin-bottom: -120%;
     height: 89%;
   }
 
-  .overlay2{
-    margin-bottom:auto;
-    margin-top:20%;
+  .overlay2 {
+    margin-bottom: auto;
+    margin-top: 20%;
     height: 89%;
   }
-  .cardpg1{
+
+  .cardpg1 {
     justify-content: center;
     align-items: center;
   }
-  .aboutpg1{
+
+  .aboutpg1 {
     margin-top: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -886,35 +1328,36 @@ footer{
     height: auto;
   }
 
-  .card2pg1{
+  .card2pg1 {
     width: 100%;
     height: auto;
   }
 
-  .cardpg2{
+  .cardpg2 {
     width: 90%;
     height: auto;
   }
 
-  .cardpg3{
+  .cardpg3 {
     justify-content: center;
     align-items: center;
     flex: 1 46%;
     width: 80%;
-    font-size:4vw;
+    font-size: 4vw;
     border-radius: 20px;
     height: auto;
   }
 
-  .aboutpg3{
+  .aboutpg3 {
     height: auto;
     border-radius: 20px;
   }
 
-  .about2pg1{
-  display:none;}
+  .about2pg1 {
+    display: none;
+  }
 
-  .resume{
+  .resume {
     width: 45%;
     margin-top: 100px;
     text-align: center;
@@ -922,165 +1365,166 @@ footer{
     align-items: auto;
   }
 
-.category{
-  margin-top: 10%;
-  padding-bottom: 10%;
-}
-  .aboutpg2{
-    display:none;
+  .category {
+    margin-top: 10%;
+    padding-bottom: 10%;
   }
-  .cardpg3{
+
+  .aboutpg2 {
+    display: none;
+  }
+
+  .cardpg3 {
     position: sticky;
-    margin-bottom:0% ;
+    margin-bottom: 0%;
   }
-  .aboutpg3{
-    margin-top:0% ;
-    margin-bottom:10% ;
+
+  .aboutpg3 {
+    margin-top: 0%;
+    margin-bottom: 10%;
 
   }
-  .works{
+  /* works*/
+  .works {
     padding-left: 0px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
-  
-  .work2{
+
+  .work2 {
     padding-left: 6px;
-    transition: width 0.5s ;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 2 46%;
-    flex-grow: inherit;
+
   }
-  .work2:hover{
+
+  .work2:hover {
     margin-top: -30px;
     padding-left: 6px;
     width: 70%;
   }
-  .work3{
+
+  .work3 {
     padding-left: 6px;
     width: 90%;
-    transition: width 0.5s ;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
-  
-  .work3:hover{
+
+  .work3:hover {
     margin-top: -30px;
     padding-left: 6px;
     width: 100%;
   }
 
-  .work4{
+  .work4 {
     width: 90%;
-    transition: width 1s ;
+    transition: width 1s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
 
-  .work4:hover{
+  .work4:hover {
     width: 100%;
   }
-  
-  .work5{
+
+  .work5 {
     width: 50%;
-    transition: width 1s ;
+    transition: width 1s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
 
-  .work5:hover{
+  .work5:hover {
     margin-top: -80px;
     width: 100%;
   }
-  
-  .work6{
+
+  .work6 {
     padding-left: 6px;
     width: 90%;
-    transition: width 0.5s ;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
-  
-  .work6:hover{
+
+  .work6:hover {
     margin-left: -6px;
     margin-top: -80px;
     padding-left: 6px;
     width: 100%;
   }
-  
-  .work7{
+
+  .work7 {
     margin-left: -6px;
     width: 100%;
-    transition: width 0.5s ;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 100%;
-    flex-grow: inherit;
+
   }
-  
-  .work7:hover{
+
+  .work7:hover {
     width: 150%;
   }
-  
-  .work8{
+
+  .work8 {
     margin-left: -6px;
     width: 100%;
-    transition: width 0.5s ;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out 1s;
     flex-direction: row;
-    flex: 1 46%;
-    flex-grow: inherit;
+
   }
-  
-  .work8:hover{
+
+  .work8:hover {
     margin-top: -50px;
     margin-left: -90px;
     padding-left: 6px;
     width: 150%;
   }
 
-  .name{
-    width:25%;
+
+  /* Footer*/
+  .name {
+    width: 25%;
 
   }
-  .name:hover{
-    width:30%;
+
+  .name:hover {
+    width: 30%;
   }
 
-  .email{
-    width:50%;
+  .email {
+    width: 50%;
   }
 
-  .email:hover{
-    width:260px;
+  .email:hover {
+    width: 260px;
   }
 
-  .question{
-    width:77%;
+  .question {
+    width: 77%;
   }
 
-  .question:hover{
-    width:360px;
+  .question:hover {
+    width: 360px;
   }
 
-  .submit{
-    width:25%;
+  .submit {
+    width: 25%;
   }
 
-  .submit:hover{
-    width:30%;
-
+  .submit:hover {
+    width: 30%;
   }
+
 }
