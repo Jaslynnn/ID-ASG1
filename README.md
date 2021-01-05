@@ -7,7 +7,9 @@ My website contains information on myself , my portfolio and my resume, in which
 
 On my resume page, the format of the page is similar to my about-me page as I wanted the designs to be consistent. A syou hover over it, the card descripting my resume will zoom in, as well as the words.
 
-Now on to my portfolio page,each of my projects are showcased in beautiful cards, which are connected to an about slider that slides outwards as you hover over it. Not only that, but the words on the slider also enlarge at the same time, with the same fluidity that the slider does. This beautiful movement is definitely an eye-catcher and what makes my website stand out from other. However, this is not all there is. Hover over the screen to see an enlarged image of all of my works in my portfolio. If you were thinking that I am about to end off my sales pitch right now, you are wrong. There is a added feature that is only exclusive for mobile users on mythat compliments my whole theme of using cards as a placeholder. O
+Now on to my portfolio page,each of my projects are showcased in beautiful cards, which are connected to an about slider that slides outwards as you hover over it. Not only that, but the words on the slider also enlarge at the same time, with the same fluidity that the slider does. This beautiful movement is definitely an eye-catcher and what makes my website stand out from other. However, this is not all there is. Hover over the screen to see an enlarged image of all of my works in my portfolio. If you were thinking that I am about to end off my sales pitch right now, you are wrong. There is a added feature that is only exclusive for mobile users on mythat compliments my whole theme of using cards as a placeholder. 
+
+My project can be found on  https://jaslynnn.github.io/ID-ASG1/
 
  
 ## Design Process
